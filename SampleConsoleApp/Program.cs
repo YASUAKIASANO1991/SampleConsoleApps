@@ -8,7 +8,7 @@ internal class Program
         {
             var chatgpt = new ChatGPT();
             var input = Console.ReadLine();
-            if(string.IsNullOrWhiteSpace(input))
+            if(!string.IsNullOrWhiteSpace(input))
             {
                 await chatgpt.getChatGPTResponse(input);
                 Console.WriteLine(chatgpt.resmessage);
